@@ -13,6 +13,8 @@
 # testing
 /coverage
 note.*
+.cursorrules
+.instructions
 
 # next.js
 /.next/
