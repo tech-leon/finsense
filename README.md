@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Finsense - AI-Powered Personal Finance Management System
+
+Finsense is an intelligent personal and family financial management system designed to help users achieve their financial goals and improve financial well-being. Through AI technology, the system provides personalized financial analysis, recommendations, and action plans.
+
+## Key Features
+
+- 🤖 AI-Driven Financial Analysis
+- 📊 Personal/Family Finance Tracking
+- 🎯 Customized Financial Goal Setting
+- 📈 Smart Financial Planning Recommendations
+- 📰 Financial News and Knowledge Integration
+- 💰 Conservative Investment Advice (After reaching specific financial goals)
+
+## Tech Stack
+
+### Frontend
+- Next.js 15
+- TailwindCSS
+- TypeScript
+- ShadcnUI
+
+### Backend
+- Python
+- FastAPI
+- Docker
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18.17 or later
+- npm, yarn, or pnpm
+- Git
 
+### Frontend Setup
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tech-leon/finsense.git
+cd finsense
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Copy the `.env.example` file to `.env` and add necessary environment variables:
+```bash
+NEXT_PUBLIC_OPENAI_API_KEY=your_api_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-To learn more about Next.js, take a look at the following resources:
+### Backend Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Navigate to the backend directory:
+```bash
+cd backend
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
 
-## Deploy on Vercel
+3. Install Python dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the FastAPI server:
+```bash
+uvicorn main:app --reload
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Docker Deployment
+
+...
+
+## Development
+
+- Frontend code can be modified in the `app` directory
+- Components can be found in the `components` directory
+- Styles are managed with TailwindCSS
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributors
+
+- [Leon](https://github.com/tech-leon)
+- [Zoe](https://github.com/zoetech0202)
+- [Moshe](https://github.com/mmiSSo-01)
